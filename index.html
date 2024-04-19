@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Deven's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstSection" id="home">
+      <div class="leftSection">
+        Hi! My name is <span class="purple">Deven</span>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+      </div>
+      <div class="rightSection">
+        <img src="image.jpg" alt="" class="src">
+      </div>
+    </section>
+    <hr>
+    <section id="about" class="about_section">
+      <h1>About Me</h1>
+      <br>
+      <p>
+        Hi, I'm Deven
+        I'm a passionate and enthusiastic student, dedicated to crafting engaging digital experiences.
+        With a keen eye for design and a love for problem-solving, I strive to create meaningful solutions that make a
+        difference.
+        Driven by curiosity and a hunger for learning, I continuously seek out new technologies and trends to stay at
+        the forefront of my field. Whether it's coding elegant websites, developing intuitive user interfaces, or diving
+        into the intricacies of data analysis, I thrive on challenges that push me to grow.
+      </p>
+      <section id="skills" class="myskills">
+        <h2>My Skills</h2>
+        <br>
+        <p>
+        <ul class="horizontal-list">
+          <li>
+            <div><img src="html.jpg" width="200" height="150">
+              <p>HTML</p>
+            </div>
+          </li>
+          <li>
+            <div><img src="css.jpg" width="200" height="150">
+              <p>CSS</p>
+            </div>
+          </li>
+          <li>
+            <div><img src="JavaScript-Logo.png" width="200" height="120">
+              <p>Java Script</p>
+            </div>
+          </li>
+          <li>
+            <div><img src="C_Logo.png" width="120" height="120">
+              <p>C</p>
+            </div>
+          </li>
+          <li>
+            <div><img src="c++.png" width="150" height="120">
+              <p>C++</p>
+            </div>
+          </li>
+          <li>
+            <div><img src="Java-Logo.png" width="250" height="150">
+              <p>Java</p>
+            </div>
+          </li>
+          <li>
+            <div><img src="python.png" width="150" height="120">
+              <p>Python</p>
+            </div>
+          </li>
+        </ul>
+        </p>
+      </section>
+    </section>
+    <hr>
+    <section id="projects" class="projects-list">
+      <h2>Projects</h2>
+      <br>
+      <div id="project-list">
+        <ul class="horizontal-list">
+          <li>
+            <div><img src="pong.png" width="250" height="200">
+              <p><a href="https://github.com/DevenGrover/Pong">Pong</a></p>
+            </div>
+          </li>
+          <li>
+            <div><img src="ttt.jpg" width="250" height="200">
+              <p><a href="https://github.com/DevenGrover/ticTacToe">TicTacToe</a></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="contact-me" class="contactme">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: [
+        '<span style="color: red;">Coder</span>',
+        '<span style="color: green;">Web Developer</span>',
+        '<span style="color: orange;">Video Editor</span>'
+      ],
+      typeSpeed: 50
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const sectionId = this.getAttribute('href');
+        const section = document.querySelector(sectionId);
+        // Adjust scroll position with some offset
+        const offset = 80; // Adjust the offset as needed
+        const sectionPosition = section.offsetTop - offset;
+        window.scrollTo({
+          top: sectionPosition,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

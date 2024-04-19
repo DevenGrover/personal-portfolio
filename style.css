@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;   
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    width: 100vw;
+    top: 0;
+    background-color: black;
+    color: white;
+    position: fixed;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover {
+    color: orange;
+    font-size: 1.1rem;
+}
+hr {
+    border: 0;
+    background-color: black;
+    height: 1.2px;
+    margin: 40px 84px;
+}
+.left {
+    font-size: 1.5rem;
+}
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+    margin-top: 10%;
+}
+.firstSection>div {
+    width: 30%;
+}
+.leftSection {
+    font-size: 3rem;
+}
+.rightSection img {
+    width: 80%;
+    height: 50px 0;
+}
+.purple {
+    color:blue ;
+}
+#element {
+    color: orange;
+}
+.about_section {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+#about p{
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 20px;
+}
+.myskills{
+    align-self: center;
+    text-align: center;
+}
+.horizontal-list {
+    list-style: none; 
+    padding: 0;
+}
+.horizontal-list li {
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: inline-block; 
+    margin-right: 10px; 
+}
+.projects-list {
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+.contactme {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+form input,form textarea,form button {
+    display: block;
+    align-items: center;
+    margin-bottom: 10px;
+    width:80%;
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    resize:none;
+}
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 81.3%;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
